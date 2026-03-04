@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pypi.org)",
+      "Bash(python -c \"import synthera; help\\(synthera\\)\")",
+      "Bash(python -c \"import synthera; from synthera.fixed_income import ModelMetadata, SimulateResults; help\\(ModelMetadata\\); help\\(SimulateResults\\)\")",
+      "Bash(python -c \"import synthera; from synthera.fixed_income import SimulateResults; help\\(SimulateResults\\)\")",
+      "Bash(python -c \"import synthera; from synthera.client import SyntheraClient, OutputFormat; help\\(OutputFormat\\)\")",
+      "Read(//c/Users/Marek/.claude/projects/c--Users-Marek-synthetic-financials-synthetic-financials/memory/**)",
+      "WebFetch(domain:docs.synthetic.ydata.ai)",
+      "Bash(uv sync)"
+    ]
+  }
+}
