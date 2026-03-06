@@ -288,6 +288,7 @@ def main(ticker, start, end, model, epochs, samples, sequence_length, output):
 
     effective_epochs = epochs if epochs is not None else DEFAULT_EPOCHS[model.lower()]
 
+    breakpoint()
     # 1. Fetch real data
     df = fetch_ohlcv(ticker, start, end)
 

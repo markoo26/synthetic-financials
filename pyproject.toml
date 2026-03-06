@@ -16,4 +16,9 @@ dev = [
     "plotly-express>=0.4.1",
     "nbformat>=5.10.4",
 ]
+# synthcity uses PyTorch (not TensorFlow) — install in a dedicated venv:
+#   uv venv && uv pip install -e ".[synthcity]"
+synthcity = [
+    "synthcity>=0.2.12",
+]
 
