@@ -1,0 +1,9 @@
+[tool.uv]
+# TensorFlow Windows notes:
+#   - 2.15.x was the last release with win_amd64 wheels; 2.16+ dropped Windows entirely.
+#   - tensorflow-io-gcs-filesystem has no Windows wheels at all.
+override-dependencies = [
+    "tensorflow>=2.15.1,<2.16 ; sys_platform == 'win32'",
+    "tensorflow-io-gcs-filesystem ; sys_platform != 'win32'",
+    "requests>=2.31",
+]
